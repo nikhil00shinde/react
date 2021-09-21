@@ -10,7 +10,15 @@ import ReactDOM from 'react-dom'; // render logic (shadow dom)
 
 import MyComp from './MyComp';
 
+// Hum multiple component use kar sakte hain
+// har ek class ka object ka state different hoga
 ReactDOM.render(
-    <MyComp />, //ek component
+  <div>
+     <MyComp />
+     <MyComp />
+     <MyComp />
+     <MyComp />
+  </div>
+   , //ek component (hota hain)
   document.querySelector('#root') // aur ek jagah jha us component ko dikhna hain
 );
