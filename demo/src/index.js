@@ -10,13 +10,17 @@ import ReactDOM from 'react-dom'; // render logic (shadow dom)
 
 import MyComp from './MyComp';
 
-// Hum multiple component use kar sakte hain
-// har ek class ka object ka state different hoga
+
 ReactDOM.render(
   <div>
      <MyComp />
+     <hr/>
      <MyComp />
+     <hr/>
      <MyComp />
+     <hr/>
+     <MyComp />
+     <hr/>
      <MyComp />
   </div>
    , //ek component (hota hain)
