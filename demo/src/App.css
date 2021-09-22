@@ -1,0 +1,13 @@
+input {
+    background-color: #3498db;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+li{
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 2px 5px 8px;
+    margin-bottom: 2rem;
+}

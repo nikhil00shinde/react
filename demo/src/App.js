@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./App.css"
 
 
 class App extends React.Component{
@@ -17,6 +17,10 @@ class App extends React.Component{
            {/* jab bhi hum kuch bhi input tag mei type karte hain toh re-render hota hain */}
 
            <input
+             type='text'
+
+            //  adding class name
+            className = "input-box"
 
              //  on typing
 
@@ -37,7 +41,7 @@ class App extends React.Component{
                 })
               }
             }}
-            
+
            value = {this.state.currInput}
            />
 
