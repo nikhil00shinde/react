@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css"
-
+import List from "./List";
 
 class App extends React.Component{
      state = {
@@ -14,19 +14,15 @@ class App extends React.Component{
 
          <div>
 
-           {/* jab bhi hum kuch bhi input tag mei type karte hain toh re-render hota hain */}
 
            <input
              type='text'
 
-            //  adding class name
             className = "input-box"
 
-             //  on typing
 
             onChange = {(e)=>{
 
-              // to show on screen of input tag
               this.setState({currInput:e.currentTarget.value})
 
             }}
@@ -35,7 +31,6 @@ class App extends React.Component{
               if(e.key == 'Enter')
               {
                 this.setState({
-                  //hum directly push nhi kar sakte array mai toh humhe es prakar se karna padega
                   tasks:[...this.state.tasks,this.state.currInput],
                   currInput:""
                 })
@@ -44,15 +39,18 @@ class App extends React.Component{
 
            value = {this.state.currInput}
            />
+          
+          {/* Props ->parent component apne children component ko data desakta hain using props
+              
+              props ko attributs ki tarah bhej sakte hain 
 
-           {/* adding the notes */}
-           <ul>
-            {/* map function return array toh array apne app UI pe add ho jaega */}
-             {this.state.tasks.map((el)=>{
-                 return <li>{el}</li>
-             })}
-
-           </ul>
+              props jha recieve hoga vha object form yani key value form mei recieve hoga
+               
+              maximum 3 props bhejna acha hota hain
+          
+          */}
+          <List tasks ={this.state.tasks} y ={1}/>
+          
          </div>
        )
      }

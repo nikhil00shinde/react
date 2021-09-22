@@ -11,3 +11,13 @@ li{
     text-shadow: 2px 5px 8px;
     margin-bottom: 2rem;
 }
+button{
+    height: 2rem;
+    width: 4rem;
+    font-size: 1.2rem;
+    background-color: red;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-align: center;
+}
